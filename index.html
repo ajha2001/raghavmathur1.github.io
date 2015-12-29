@@ -1,30 +1,137 @@
+<!DOCTYPE html>
 <html>
-<head> <title>Google</title><head>
-
+<head>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<title>codeplayer</title>
 	<style type="text/css">
+		body{
+			margin: 0px;
+			background-color:#F1F9F6 ;
+			overflow-y:hidden ;
+			overflow-x:hidden ;
+		}
+		#header{
+			background-color: #2AD9AA;
+		}
+		#heading{
+			font-family:open sans ;
+			font-weight:lighter;
+			font-size:1.7em ;
+			margin-left: 25px;
+		}
+		#toggler{
+			margin-top: -40px;
+		}
+		.bord{
+			font-family: open sans;
+			font-weight: lighter;
+			border-radius:5px ;
+			border:1px solid #F1F9F6;
+			margin:05px ;
+			padding: 10px 15px 10px 15px;
+			background-color: transparent;
+			color:#F1F9F6 ;
+			-webkit-transition:all 0.4s ease;
+		}
+		.bord:hover{
+			background-color: #F1F9F6;
+			color:#2AD9AA ;
 
-	.none{
-		text-decoration: none;
-		font-weight: normal;
-		font-size: 0.9em;
-	}
+		}
+		.flo{
+			float: right;
+			margin-top:-45px ;
+		}
+		#both{
+			clear: both;
+		}
+		.container2{
+			width:100% ;
+			height:100% ;
+		}
+		.codecontainer{
+			width:33.333% ;
+			height:100% ;
+			float: left;
+		}
+		
+		.codecontainer textarea{
+			width:100% ;
+			height:924px ;
+			background-color:#F3F3F3 ;
+			border-right:1px solid #CEC6C6;
+			font-family:open sans;
+			font-size:1.0em ;
+			float: left;
+		}
+		#correcter{
+			margin-left:5px ;
+			height: 924px;
+			width:100%;
+			border-left:1px solid #CEC6C6 ;
+			border-top: none;
+		}
 
-	</style> 
-	<body>
 
-		<br><br><br><br>
+	</style>
 
-		<div>
+</head>
+<body>
+	<div id="webcontainer">
 
-			<center><img src="C:\Raghav Stuff\Websites\images\google2.jpg" width= "300" height="200" ></center>
-			<center><input type =text ; size = "70 px" ></center><br><br>
-			<center><button Id = "buttonOne">Google Search</button><a href="https://www.google.com/doodles"><button>I'm Feeling Lucky</button></a><br></a><br></center>
+		<div id="container1">
+
+			<div id="header">
+
+				<div id="heading">
+					Codeplayer
+				</div>
+
+				<center>
+
+					<div id="toggler">
+
+						<button class="bord" id="clic">HTML</button>
+						<button class="bord" id="click2">CSS</button>
+						<button class="bord" id="click4">Result</button>
+					</div>
+
+				</center>
+
+				<button class="bord flo" id="run">RUN</button>
+			</div>	
 		</div>
 
-		<div>
-			<center>
-				<p>Google.co.in offered in:<span class ="none">हिन्दी</span> বাংলা తెలుగు <span class ="none">मराठी தமிழ் </span> ગુજરાતી ಕನ್ನಡ മലയാളം <span class ="none">ਪੰਜਾਬੀ</span></p>
-			</center>
+		<div id="both"></div>
+
+
+		<div id="container2">
+
+			<div class="codecontainer" id="htmlcontainer">
+				<textarea placeholder="Put Your HTML Here" id="htl"></textarea>
+			</div>
+			<div class="codecontainer" id="csscontainer">
+				<textarea placeholder="Put Your CSS Here" id="cs"></textarea>
+			</div>
+			<div class="codecontainer" id="resultcontainer">
+				<iframe id="correcter"></iframe>
+			</div>
 		</div>
-	</body>
-	</html>
+
+	</div>
+	<script type="text/javascript">
+		$("#clic").click(function () {
+			$('#htl').toggle();
+		});
+		$("#click2").click(function () {
+			$('#cs').toggle();
+		});
+		$("#click4").click(function () {
+			$('#correcter').toggle();
+		});
+		$("#run").click(function(){
+			$("iframe").contents().find("html").html('<style>' + $("#cs").val()+'</style>'+$("#htl").val());
+		})
+	</script>
+</body>
+</html>
