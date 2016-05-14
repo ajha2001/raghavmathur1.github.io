@@ -1,3 +1,222 @@
-body{
-	
-}
+		body{
+			margin:0 auto;
+			background-color: #fff;
+			padding-bottom:  130%;
+		}
+
+		#topbar{
+			position: fixed;
+			width:100%;
+			display:block !important ; 
+			z-index: 2;
+		}
+
+		#top ul li{
+			list-style: none;
+			float: left;
+			margin-right:30px ;
+			color: #eef8ff;
+			margin-top:-20px;
+			font-family: open sans;
+			font-size:1.1em ; 
+			-webkit-transition:all 0.3s ease;
+			padding:20px 20px ;
+			z-index: 2;
+			position: relative;
+			text-decoration: none;
+		}
+
+		a:link{
+			text-decoration: none;
+		}
+
+		#top ul li:hover{
+			background-color:#363636 !important;
+		}
+		#top{
+			margin: 0;
+			width: 100%;
+			background-color: #1490eb;
+			padding-bottom:25px ;
+			display:block ;
+		}
+
+		#top ul{
+			margin: 0;
+			padding-top:20px ;
+		}
+		#blank{
+			margin: 0;
+			width: 100%;
+			background-color: #1490eb;
+			padding-bottom:80px ;
+			display: none;
+			position: fixed;
+		}
+		.arrow{
+			color: #eef8ff;
+			width:40px;
+			position: absolute;
+			top: 30px;
+			left:90% ;
+		}
+		#img1{
+			margin-top:150px ;
+			width:200px ;
+			height: 200px;
+			border-radius:100px ;
+			border:3px solid #1490eb;
+			-webkit-transition:all 0.7s ease;
+		}
+
+		#img1:hover{
+			border-radius:50px ;
+		}
+		#text{
+			font-size: 1.2em;
+			font-family:open sans ;
+			font-weight: lighter;
+		}
+
+		#home{
+
+		}
+
+		#press{
+			margin-top:5%  ;
+			padding: 19px 23px;
+			background-color: transparent;
+			outline: none;
+			border: 2px solid #1490eb;
+			border-radius:10px ;
+			color: #1490eb;
+			position: relative;
+			overflow: hidden;
+			transition:all 1s ease;
+
+		}
+		#btext{
+			z-index: 1;
+			position: relative;
+
+		}
+		#back{
+			position: absolute;
+			background-color: #0094C6;
+			width: 100%;
+			height: 270%;
+			top: -30px;
+			left: -160px;
+			transition:all 0.7s ease;
+			transform:rotate(0deg);
+		}
+
+		#press:hover{
+			color:#fff;
+		}
+
+		#press:hover > #back{
+			left: -0px;
+		}
+
+		#parallax1{
+			background:url(ucla.jpg) no-repeat center center; 
+			background-attachment: fixed;
+			padding-bottom:300px ;
+			margin-top:10% ;
+			background-size: 100%;
+		}
+		#about{
+			width: 100%;
+			margin-top:5% ;
+			margin-bottom: 600px;
+		}
+
+		.a{
+			float: left;
+			width:25%;
+			text-align: justify;
+			font-family: open sans;
+			font-size:0.9em ;
+			margin:0 37px 0 37px ;
+		}
+		.aboutheaders{
+			font-size:1.2em ;
+			font-family:open sans ;
+			text-align: center;
+		}
+		.images{
+			width:200px;
+			height:200px;	
+			border-radius:100px ;
+		}
+
+		#aheading{
+			font-family: open sans;
+			font-size:1.5em ;
+
+		}
+
+		#acontent{
+			margin-left:25px ;
+			margin-bottom:20% ;
+		}
+
+		#parallax2{
+			background:url(img2.jpg) no-repeat center center; 
+			background-attachment: fixed;
+			padding-bottom:300px ;
+			background-size: 100%;
+		}
+
+		#about{
+
+		}
+		@media only screen and (max-width: 930px){
+			#blank{
+				display:block;
+				padding-bottom:100px ;
+				width: 100%;
+			}
+			#top{
+				display: none;
+				padding-bottom: 25px;
+			}
+
+			#top ul li{
+				float: none;
+				padding:10px 10px ;
+				margin-top: 0;
+			}
+
+			.a{
+				float: none;
+				width: 300px;
+				margin-bottom:150px ;
+			}
+
+			#acontent{
+				margin-left:0px ;
+			}
+
+			#parallax2{
+				margin-top:0% ;
+			}
+
+			#about{
+				margin-top: 300px;
+			}
+		}
+		@media only screen and (min-width: 930px){
+			#top{
+				display:block !important;
+				padding-bottom: 45px;
+			}
+
+			#top ul li{
+				display:block !important;
+			}
+			#topbar{
+				display: block !important;
+			}
+		}
