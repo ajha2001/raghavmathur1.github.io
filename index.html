@@ -1,137 +1,187 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>top</title>
 	<script type="text/javascript" src="jquery.min.js"></script>
-	<title>codeplayer</title>
-	<style type="text/css">
-		body{
-			margin: 0px;
-			background-color:#F1F9F6 ;
-			overflow-y:hidden ;
-			overflow-x:hidden ;
-		}
-		#header{
-			background-color: #2AD9AA;
-		}
-		#heading{
-			font-family:open sans ;
-			font-weight:lighter;
-			font-size:1.7em ;
-			margin-left: 25px;
-		}
-		#toggler{
-			margin-top: -40px;
-		}
-		.bord{
-			font-family: open sans;
-			font-weight: lighter;
-			border-radius:5px ;
-			border:1px solid #F1F9F6;
-			margin:05px ;
-			padding: 10px 15px 10px 15px;
-			background-color: transparent;
-			color:#F1F9F6 ;
-			-webkit-transition:all 0.4s ease;
-		}
-		.bord:hover{
-			background-color: #F1F9F6;
-			color:#2AD9AA ;
-
-		}
-		.flo{
-			float: right;
-			margin-top:-45px ;
-		}
-		#both{
-			clear: both;
-		}
-		.container2{
-			width:100% ;
-			height:100% ;
-		}
-		.codecontainer{
-			width:33.333% ;
-			height:100% ;
-			float: left;
-		}
-		
-		.codecontainer textarea{
-			width:100% ;
-			height:924px ;
-			background-color:#F3F3F3 ;
-			border-right:1px solid #CEC6C6;
-			font-family:open sans;
-			font-size:1.0em ;
-			float: left;
-		}
-		#correcter{
-			margin-left:5px ;
-			height: 924px;
-			width:100%;
-			border-left:1px solid #CEC6C6 ;
-			border-top: none;
-		}
-
-
-	</style>
-
+	<link rel="stylesheet" type="text/css" href="">
 </head>
 <body>
-	<div id="webcontainer">
+	<div id="topbar">
+		<div id="top">
+			<ul>
+				<a href=""><li id="change1">HOME</li></a>
+				<a href=""><li id="change2">ABOUT</li></a>
+				<a href=""><li id="change3">PROJECTS</li></a>
+				<a href=""><li id="change4">CONTACT</li></a>
+			</ul>
+		</div>
+		<div id="blank">
+			<img src="arrow1.png" class="arrow">
+			<img src="arrow.png" class="arrow" style="display:none">
+		</div>
+	</div>
 
-		<div id="container1">
+	<div id="home">
+		<center>
+			<img src="img1.jpg" id="img1"><br>
+			<p id="text">
+				<span>Web-Designer</span><br>
+				<span>Photoshopper</span><br>
+				<span>Chess Player</span><br>
+				<span>Cubeist</span><br>
+			</p>
 
-			<div id="header">
+			<button id="press" class="animated">
+				<span id="btext">EXPLORE</span>
+				<span id="back"></span>	
+			</button>
+		</center>	
+	</div>
 
-				<div id="heading">
-					Codeplayer
+	<div id="parallax1">
+		
+	</div>
+	<div id="about">
+	<br>
+	<br>
+		<center>
+			<div id="aheading">
+				ABOUT
+			</div>
+			<div id="acontent">
+				<div class="a">
+					<center>
+						<img src="comp.png" class="images"><br>
+						<span class="aboutheaders">WEB DESIGN</span><br>
+					</center>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</div>
-
-				<center>
-
-					<div id="toggler">
-
-						<button class="bord" id="clic">HTML</button>
-						<button class="bord" id="click2">CSS</button>
-						<button class="bord" id="click4">Result</button>
-					</div>
-
-				</center>
-
-				<button class="bord flo" id="run">RUN</button>
-			</div>	
-		</div>
-
-		<div id="both"></div>
-
-
-		<div id="container2">
-
-			<div class="codecontainer" id="htmlcontainer">
-				<textarea placeholder="Put Your HTML Here" id="htl"></textarea>
+				<div class="a">
+					<center>
+						<img src="photoshop.jpg" class="images"><br>
+						<span class="aboutheaders">PHOTOSHOP</span><br>
+					</center>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+				<div class="a">
+					<center>
+						<img src="chess.jpg" class="images"><br>
+						<span class="aboutheaders">CHESS</span><br>
+					</center>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
 			</div>
-			<div class="codecontainer" id="csscontainer">
-				<textarea placeholder="Put Your CSS Here" id="cs"></textarea>
-			</div>
-			<div class="codecontainer" id="resultcontainer">
-				<iframe id="correcter"></iframe>
-			</div>
-		</div>
+		</center>
+	</div>
+	<div id="parallax2">
 
 	</div>
+
+	<div id="contact">
+		
+	</div>
+	
 	<script type="text/javascript">
-		$("#clic").click(function () {
-			$('#htl').toggle();
+		$("#blank").click(function () {
+			$("#top").slideToggle();
+			$(this).find('img').toggle();
 		});
-		$("#click2").click(function () {
-			$('#cs').toggle();
+
+		$("#change1").click(function () {
+			$("#change1").css("background-color","black");
+			$("#change2").css("background-color","transparent");
+			$("#change3").css("background-color","transparent");
+			$("#change4").css("background-color","transparent");
+			event.preventDefault();
+			var x = $('#home').offset().top;
+			$('body').animate({scrollTop:x},500);
 		});
-		$("#click4").click(function () {
-			$('#correcter').toggle();
+		$("#change2").click(function () {
+			$("#change2").css("background-color","black");
+			$("#change1").css("background-color","transparent");
+			$("#change3").css("background-color","transparent");
+			$("#change4").css("background-color","transparent");
+			event.preventDefault();
+			var x = $('#about').offset().top;
+			$('body').animate({scrollTop:x},500);
 		});
-		$("#run").click(function(){
-			$("iframe").contents().find("html").html('<style>' + $("#cs").val()+'</style>'+$("#htl").val());
-		})
+		$("#change3").click(function () {
+			$("#change3").css("background-color","black");
+			$("#change1").css("background-color","transparent");
+			$("#change2").css("background-color","transparent");
+			$("#change4").css("background-color","transparent");
+			event.preventDefault();
+		});
+		$("#change4").click(function () {
+			$("#change4").css("background-color","black");
+			$("#change1").css("background-color","transparent");
+			$("#change2").css("background-color","transparent");
+			$("#change3").css("background-color","transparent");
+			event.preventDefault();
+		});
+		$(document).scroll(function() {
+			var y = $(this).scrollTop();
+			if (0 < y) {
+				$("#change1").css("background-color","black");
+			}
+			if (600 < y) {
+				$("#change1").css("background-color","transparent");
+			}
+		});
+
+		$(document).scroll(function() {
+			var y = $(this).scrollTop();
+			if (600 < y) {
+				$("#change2").css("background-color","black");
+			} 
+			if (1600 < y) {
+				$("#change2").css("background-color","transparent");
+			}
+			if (600 > y) {
+				$("#change2").css("background-color","transparent");
+			}
+		});
+
+		$(document).scroll(function() {
+			var y = $(this).scrollTop();
+			if (1600 < y) {
+				$("#change3").css("background-color","black");
+			} 
+			if (2200 < y) {
+				$("#change3").css("background-color","transparent");
+			}
+			if (1600 > y) {
+				$("#change3").css("background-color","transparent");
+			}
+		});
+
+		$(document).scroll(function() {
+			var y = $(this).scrollTop();
+			if (2200 < y) {
+				$("#change4").css("background-color","black");
+			} 
+			if (2800 < y) {
+				$("#change4").css("background-color","transparent");
+			}
+			if (2200 > y) {
+				$("#change4").css("background-color","transparent");
+			}
+		});
 	</script>
 </body>
 </html>
