@@ -124,7 +124,7 @@
 			background-attachment: fixed;
 			padding-bottom:300px ;
 			margin-top:10% ;
-			background-size: 100%;
+			background-size: 100% 100%;
 		}
 		#about{
 			width: 100%;
@@ -166,7 +166,7 @@
 			background:url(img2.jpg) no-repeat center center; 
 			background-attachment: fixed;
 			padding-bottom:300px ;
-			background-size: 100%;
+			background-size: 100% 100%;
 		}
 
 		#about{
