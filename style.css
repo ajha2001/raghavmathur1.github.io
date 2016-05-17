@@ -1,15 +1,15 @@
-::-webkit-scrollbar {
+		::-webkit-scrollbar {
 			width: 7px;
 		}
 		::-webkit-scrollbar-track {
 			-webkit-border-radius: 10px;
 			border-radius: 10px;
-			background-color: #000;
+			background-color: #eee;
 		}
 		::-webkit-scrollbar-thumb {
 			-webkit-border-radius: 10px;
 			border-radius: 10px;
-			background:#6A35BA; 
+			background:#000; 
 		}
 		body{
 			margin:0 auto;
@@ -76,7 +76,7 @@
 			color: #eef8ff;
 			width:40px;
 			position: absolute;
-			top: 30px;
+			top: 15px;
 			left:90% ;
 		}
 		#img1{
@@ -154,7 +154,7 @@
 		#about{
 			width: 100%;
 			margin-top:5% ;
-			margin-bottom: 600px;
+			margin-bottom: 650px;
 		}
 
 		.a{
@@ -163,7 +163,7 @@
 			text-align: justify;
 			font-family: open sans;
 			font-size:0.9em ;
-			margin:0 37px 0 37px ;
+			margin:0 37px 0px 37px ;
 		}
 		.aboutheaders{
 			font-size:1.2em ;
@@ -214,15 +214,52 @@
 
 		#chead{
 			font-family: raleway;
-			font-size: 2em;
+			font-size: 2.5em;
 			font-weight: bold;
 			margin-top:100px ;
 			margin-bottom:50px ;
 		}
+
+		.edit{
+			font-size:1.7em ;
+			font-family:open sans ;
+			color: #3DDC97;
+		}
+
+		.forminput{
+			border-bottom:1px solid #3DDC97 ;
+			border-right:0px ;
+			border-left:0px ;
+			border-top:0px ;
+			width:250px ;
+			font-family:raleway ;
+			font-size:1.2em ;
+		}
+
+		.forminput:focus{
+			outline: none;
+		}
+
+		#mtext:focus{
+			outline: none;
+		}
+
+		#contact{
+			padding-bottom:50px ;
+		}
+
+		#mtext{
+			width:350px ;
+			height:170px ;
+			border:1px solid #3DDC97;
+			font-family:raleway ;
+			font-size: 1.1em;
+		}
+
 		@media only screen and (max-width: 930px){
 			#blank{
 				display:block;
-				padding-bottom:100px ;
+				padding-bottom:70px ;
 				width: 100%;
 			}
 			#top{
