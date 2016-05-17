@@ -119,6 +119,7 @@
 
 	<div id="parallax2"></div>
 
+	<div id="empdiv2" class="empclasses"></div>
 
 	<div id="projects">
 		<center>
@@ -126,9 +127,7 @@
 		</center>
 	</div>
 
-
 	<div id="parallax3"></div>
-
 
 	<div id="contact">
 		<center>
@@ -137,7 +136,26 @@
 			</div>
 
 			<form>
-				
+				<div id="name">
+					<div id="nam" class="edit">Your Name</div><br>
+					<input type="text" name="firstname" class="forminput" id="formi1" placeholder="ex: Vahgar Ruhtam">
+				</div>
+				<br>
+				<br>
+				<br>
+				<br>
+				<div id="email">
+					<div id="emal" class="edit">Your Email Id</div><br>
+					<input type="email" name="emailid" class="forminput" id="formi1" placeholder="ex: abcd@gmail.com">
+				</div>
+				<br>
+				<br>
+				<br>
+				<br>
+				<div id="message">
+					<div id="mess" class="edit">Your Message</div><br>
+					<textarea id="mtext"></textarea>
+				</div>
 			</form>
 		</center>
 	</div>
@@ -180,6 +198,9 @@
 			$("#change2").css("background-color","transparent");
 			$("#change4").css("background-color","transparent");
 			event.preventDefault();
+			var x = $('#empdiv2').offset().top;
+			$('body').animate({scrollTop:x},1000);
+
 		});
 		$("#change4").click(function () {
 			$("#change4").css("background-color","black");
@@ -187,70 +208,47 @@
 			$("#change2").css("background-color","transparent");
 			$("#change3").css("background-color","transparent");
 			event.preventDefault();
-		});
-		$(document).scroll(function() {
-			var y = $(this).scrollTop();
-			if (0 < y) {
-				$("#change1").css("background-color","black");
-			}
-			if (599.999 < y) {
-				$("#change1").css("background-color","transparent");
-			}
-		});
+			var x = $('#contact').offset().top;
+			$('body').animate({scrollTop:x},1000);
 
+		});
 		$(document).scroll(function() {
 			var y = $(this).scrollTop();
-			if (600 < y) {
+
+			if ((0 < y) && (y < 600))  {
+				$("#change1").css("background-color","#000");
+				$("#change2").css("background-color","transparent");
+				$("#change3").css("background-color","transparent");
+				$("#change4").css("background-color","transparent");
+				$("#top").css("background-color", "#1490eb")
+				$("#blank").css("background-color", "#1490eb")
+			}
+
+			if ((600 < y) && (y < 1800)) {
 				$("#change2").css("background-color","#000");
+				$("#change1").css("background-color","transparent");
+				$("#change3").css("background-color","transparent");
+				$("#change4").css("background-color","transparent");
 				$("#top").css("background-color", "#6A35BA")
 				$("#blank").css("background-color", "#6A35BA")
-			} 
-			if (1800 < y) {
-				$("#change2").css("background-color","transparent");
-				$("#top").css("background-color", "#1490eb")
-				$("#blank").css("background-color", "#1490eb")
 			}
-			if (600 > y) {
-				$("#change2").css("background-color","transparent");
-				$("#top").css("background-color", "#1490eb")
-				$("#blank").css("background-color", "#1490eb")
-			}
-		});
 
-		$(document).scroll(function() {
-			var y = $(this).scrollTop();
-			if (1800 < y) {
-				$("#change3").css("background-color","black");
+			if ((1800 < y) && (y < 2800)) {
+				$("#change3").css("background-color","#000");
+				$("#change1").css("background-color","transparent");
+				$("#change2").css("background-color","transparent");
+				$("#change4").css("background-color","transparent");
 				$("#top").css("background-color", "#FF495C")
 				$("#blank").css("background-color", "#FF495C")
-			} 
-			if (3200 < y) {
-				$("#change3").css("background-color","transparent");
-				$("#top").css("background-color", "#6A35BA")
-				$("#blank").css("background-color", "#6A35BA")
 			}
-			if (1800 > y) {
-				$("#change3").css("background-color","transparent");
-				$("#top").css("background-color", "#6A35BA")
-				$("#blank").css("background-color", "#6A35BA")
-			}
-			if (600 > y) {
-				$("#change2").css("background-color","transparent");
-				$("#top").css("background-color", "#1490eb")
-				$("#blank").css("background-color", "#1490eb")
-			}
-		});
 
-		$(document).scroll(function() {
-			var y = $(this).scrollTop();
-			if (3201 < y) {
-				$("#change4").css("background-color","black");
-			} 
-			if (3400 < y) {
-				$("#change4").css("background-color","transparent");
-			}
-			if (2200 > y) {
-				$("#change4").css("background-color","transparent");
+			if ((2800 < y) && (y < 3800)) {
+				$("#change4").css("background-color","#000");
+				$("#change1").css("background-color","transparent");
+				$("#change2").css("background-color","transparent");
+				$("#change3").css("background-color","transparent");
+				$("#top").css("background-color", "#3DDC97")
+				$("#blank").css("background-color", "#3DDC97")
 			}
 		});
 	</script>
