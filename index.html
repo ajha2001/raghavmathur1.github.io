@@ -26,10 +26,10 @@
 	var client = new XMLHttpRequest();
 	client.open('GET', 'text.txt');
 	client.onreadystatechange = function() {
-		var alltext = client.responseText;
+		alltext = client.responseText;
+		console.log(alltext)
 	}
 
-	console.log(alltext)
 	client.send();	
 	text = "अंतरिक्ष"
 	function randomsort(a, b) { 
