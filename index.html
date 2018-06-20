@@ -25,13 +25,20 @@
 <script type="text/javascript">
 	var client = new XMLHttpRequest();
 	client.open('GET', 'text.txt');
+	var alltext
 	client.onreadystatechange = function() {
 		alltext = client.responseText;
 		console.log(alltext)
 	}
 
-	client.send();	
-	text = "अंतरिक्ष"
+	alltext = altext.split(" ");
+	function getRandomInt(max) {
+		return Math.floor(Math.random() * Math.floor(max));
+	}
+
+	rand = getRandomInt(2);
+
+	text = alltext[rand]
 	function randomsort(a, b) { 
 		return Math.random()>.5 ? -1 : 1;
 	}
