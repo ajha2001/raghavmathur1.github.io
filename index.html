@@ -25,20 +25,20 @@
 <script type="text/javascript">
 	var client = new XMLHttpRequest();
 	client.open('GET', 'text.txt');
-	var alltext
+	all = "asdasd"
 	client.onreadystatechange = function() {
-		alltext = client.responseText;
+		var alltext = client.responseText;
 		console.log(alltext)
 	}
 
-	alltext = alltext.split(" ");
+	all= alltext.split(" ");
 	function getRandomInt(max) {
 		return Math.floor(Math.random() * Math.floor(max));
 	}
 
 	rand = getRandomInt(2);
 
-	text = alltext[rand]
+	text = all[rand]
 	function randomsort(a, b) { 
 		return Math.random()>.5 ? -1 : 1;
 	}
@@ -78,21 +78,5 @@
 		arg = parseInt(number)
 		fun(arg)
 	}, this));
-
-	
-	/*	$('.character').on('click','#circ0',function(){b = 0;fun(b)})
-	$('.character').on('click','#circ1',function(){b = 1;fun(b)})
-	$('.character').on('click','#circ2',function(){b = 2;fun(b)})
-	$('.character').on('click','#circ3',function(){b = 3;fun(b)})
-	$('.character').on('click','#circ4',function(){b = 4;fun(b)})
-	$('.character').on('click','#circ5',function(){b = 5;fun(b)})
-	$('.character').on('click','#circ6',function(){b = 6;fun(b)})
-	$('.character').on('click','#circ7',function(){b = 7;fun(b)})
-	$('.character').on('click','#circ8',function(){b = 8;fun(b)})
-	$('.character').on('click','#circ9',function(){b = 9;fun(b)})
-	$('.character').on('click','#circ10',function(){b = 10;fun(b)})
-	$('.character').on('click','#circ11',function(){b = 11;fun(b)})
-	$('.character').on('click','#circ12',function(){b = 12;fun(b)})*/
-
 </script>
 </html>
