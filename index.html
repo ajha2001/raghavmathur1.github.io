@@ -28,10 +28,10 @@
 	all = "asdasd"
 	client.onreadystatechange = function() {
 		var alltext = client.responseText;
+		all= alltext.split(" ");
 		console.log(alltext)
 	}
 
-	all= alltext.split(" ");
 	function getRandomInt(max) {
 		return Math.floor(Math.random() * Math.floor(max));
 	}
