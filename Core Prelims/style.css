@@ -201,7 +201,7 @@ p
 .section3
 {
 	background-color: #fff;
-	height: 90vh;
+	height: 100vh;
 }
 
 .col2
@@ -444,6 +444,7 @@ p
 	margin:0 5px; 
 	transform: scale(0);
 	z-index: 2;
+	cursor: pointer;
 }
 
 .t2{
@@ -590,7 +591,7 @@ p
 
 .sometext{
 	position: absolute;
-	margin:20px 40px;
+	margin:10px 40px;
 	left: 0px;
 }
 
@@ -601,7 +602,7 @@ p
 }
 
 .blocks{
-	margin: 0 0 40px  0;
+	margin-top: 20px;
 	width: 45vw;
 	height: 10vh;
 	background: #fff;
@@ -629,4 +630,38 @@ iframe{
 
 .play img{
 	width: 100px;
+}
+
+.aliens
+{
+	height: 70px;
+	width: 70px;
+	overflow: hidden;
+	position: absolute;
+}
+.slidex
+{
+	width: 350px;
+	height: 70px;
+	display: grid;
+	grid-template-columns:20% 20% 20% 20% 20%;
+	transform: translateX(0);
+
+}
+.arrows
+{
+	position: absolute;
+}
+.r
+{
+	position: absolute;
+	right: 0;
+	top: 50%;
+}
+.l
+{
+	position: absolute;
+	left: 0;
+	top: 50%;
+
 }

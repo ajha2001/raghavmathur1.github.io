@@ -95,7 +95,17 @@
 				</div>
 
 				<div class="transform cflex">
-					<img src="alien2.png" class="ali">
+					<div class="aliens">
+					<div class="slidex">
+						
+						<img src="alien2.png" class="ali">
+						<img src="alien2.png" class="ali">
+						<img src="alien2.png" class="ali">
+						<img src="alien2.png" class="ali">
+						<img src="alien2.png" class="ali">
+					</div>
+					
+					</div>
 				</div>
 				<div class="circs cflex">
 					<div class="cir cir1 cflex"><img src="track.png" class="ali2"></div>
@@ -103,17 +113,19 @@
 					<div class="cir cir3 cflex"><img src="analysis.png" class="ali2"></div>
 				</div>
 				<div class="trantext animated">
-					<div class="bbut bs1">Back</div>
+					<div class="bbut bs1"><img src="x.png" height="20px" width="20px"></div>
+					<img src="arr.png" class="r" height="20px" width="20px">
+					<img src="arr.png" class="l" style="transform: rotate(180deg);" height="20px" width="20px">
 				</div>
 
 				<div class="map hid">
-					<div class="bbut mar bs2">Back</div>
+					<div class="bbut mar bs2"><img src="x.png" height="20px" width="20px"></div>
 				</div>
 				<div class="analysis hid">
-					<div class="bbut mar bs3">Back</div>
+					<div class="bbut mar bs3"><img src="x.png" height="20px" width="20px"></div>
 				</div>
 				<div class="register hid">
-					<div class="bbut mar bs4">Back</div>
+					<div class="bbut mar bs4"><img src="x.png" height="20px" width="20px"></div>
 				</div>
 			</div>
 			<img src="watch.png" class="watch">
@@ -211,7 +223,7 @@
 					setTimeout(a4,1000)
 				}
 
-				if (top>= 2000&&top<2300){
+				if (top>= 1260){
 					$(".cir").addClass("t2")
 					$(".transform").addClass("t2")
 					$(".circ").addClass("t2")
@@ -227,7 +239,7 @@
 					}, 6200)
 				}
 
-				if (top>= 2400&&top<2900){
+				if (top>= 1900){
 					$('.col3').css("animation","ani 1.7s")
 					$('.bcol3').css("animation","ani 1s")
 					$('.p9').addClass("animated slideInUp")
@@ -284,6 +296,9 @@
 		$(".cir1").click(function () {$(".map").css({"transform":"scale(1)"})})
 		$(".cir2").click(function () {$(".register").css({"transform":"scale(1)"})})
 		$(".cir3").click(function () {$(".analysis").css({"transform":"scale(1)"})})
+		$(".bs2").click(function () {$(".map").css({"transform":"scale(0)"})})
+		$(".bs4").click(function () {$(".register").css({"transform":"scale(0)"})})
+		$(".bs3").click(function () {$(".analysis").css({"transform":"scale(0)"})})
 
 		$(".play").click(function () {
 			$(".section5").append('<iframe src="https://www.youtube.com/embed/ZT00FOkqvUk?autoplay=1&showinfo=0&controls=0&modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>')
@@ -295,6 +310,61 @@
 				$(".play").css({"display":"none"})
 			}, 1100)
 
+		})
+		$(document).ready(function(){
+				var n=0;
+			$('.r').click(function(){
+				if (n==0) {
+					$('.slidex').css('transform','translateX(-70px)')
+					$('.slidex').css('transition','0.2s')
+					n++
+					
+
+				}
+				else if (n==1) {
+					$('.slidex').css('transform','translateX(-140px)')
+					$('.slidex').css('transition','0.2s')
+					n++
+
+				}
+				else if (n==2) {
+					$('.slidex').css('transform','translateX(-210px)')
+					$('.slidex').css('transition','0.2s')
+					n++
+				}
+				else if (n==3) {
+					$('.slidex').css('transform','translateX(-280px)')
+					$('.slidex').css('transition','0.2s')
+					n=3
+				}
+				
+			})
+			$('.l').click(function(){
+				if (n==0) {
+					$('.slidex').css('transform','translateX(0px)')
+					$('.slidex').css('transition','0.2s')
+					n=0
+					
+
+				}
+				else if (n==1) {
+					$('.slidex').css('transform','translateX(-70px)')
+					$('.slidex').css('transition','0.2s')
+					n--
+
+				}
+				else if (n==2) {
+					$('.slidex').css('transform','translateX(-140px)')
+					$('.slidex').css('transition','0.2s')
+					n--
+				}
+				else if (n==3) {
+					$('.slidex').css('transform','translateX(-210px)')
+					$('.slidex').css('transition','0.2s')
+					n--
+				}
+				
+			})
 		})
 	</script>
 </body>
