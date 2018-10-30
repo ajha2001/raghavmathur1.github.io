@@ -586,7 +586,10 @@ p
 }
 
 .try1 span{
-	margin-left: -5px;
+}
+
+.widow{
+	width:50px; 
 }
 
 .sometext{
