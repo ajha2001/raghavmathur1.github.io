@@ -1,0 +1,158 @@
+body{
+	margin: 0;
+	font-family: cera pro;
+	overflow-x: hidden;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	z-index: 5
+}
+
+.box{
+	width: 45vw;
+	height: 6vh;
+	background: #fff;
+	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.10);
+	border-radius: 10px;
+	margin: 20px 0;
+	padding: 20px;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+}
+
+.heading{
+	font-weight: 800;
+	font-size: 18px;
+	letter-spacing: 1.5px;
+	margin-left: 10px;
+}
+
+.sub{
+	font-size: 20px;
+	letter-spacing: 1.5px;
+	margin-left: 10px;
+}
+
+.heading2{
+	font-weight: 800;
+	font-size: 22px;
+	letter-spacing: 1.5px;
+	margin-left: 80px;
+}
+
+.sub2{
+	font-size: 16px;
+	letter-spacing: 1.5px;
+	margin-left: 80px;
+}
+
+.profile{
+	background: url("stock.jpg");
+	background-size: cover;
+	background-position: center; 
+	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.10);
+	width: 60px;
+	height: 60px;
+	border-radius: 100px;
+	position: absolute;
+}
+
+.box2{
+	height: 10vh;
+}
+
+.sub3{
+	font-weight: 600;
+}
+
+.sub4{
+	font-size: 15px;
+}
+
+.edit{
+	width: 45vw;
+	text-align: right;
+	font-weight: 600;
+	color: #F71735;
+	cursor: pointer;
+}
+
+.circle{
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	position: absolute;;
+	left:18vw;
+	top: 7vh;
+	background: linear-gradient(to right, #B597FC, #5A62CA)
+}
+
+.second{
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	position: absolute;;
+	right: 22vw;
+	top: 72vh;
+	background: rgba(34,256,34,0.2);
+	background: linear-gradient(to right, #FEA272, #F5726B)
+}
+
+@media only screen and (max-width: 1000px){
+	.box{
+		width: 80vw;
+	}
+
+	.edit{
+		width: 80vw;
+	}
+
+	.circle{
+		left: 20px;
+	}
+
+	.second{
+		right: 20px;
+	}
+}
+
+@media only screen and (max-width: 500px){
+	.heading{
+		font-size: 16px;
+	}
+
+	.heading2{
+		font-size: 18px;
+	}
+
+	.sub{
+		font-size: 14px;
+	}
+
+	.sub2{
+		font-size: 14px;
+	}
+	.sub2{
+		font-size: 15px;
+	}
+
+	.circle{
+		width: 100px;
+		height: 100px;
+		top: 13vh;
+	}
+
+	.second{
+		width: 100px;
+		height: 100px;
+		top: 80vh;
+	}
+}
