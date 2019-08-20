@@ -1,0 +1,113 @@
+body{
+	margin: 0;
+	overflow-x: hidden;
+	font-family: cera pro;
+}
+
+.container{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+}
+
+.name{
+	width: 70vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.first{
+	font-size: 150px;
+	/*-webkit-text-stroke:2px #000;*/
+	font-weight: 900;
+	color:  transparent;
+	margin-left: 52px;
+	letter-spacing: 4px;
+	/*background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);*/
+	/*background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);*/
+	-webkit-text-stroke:0.5px #000;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	width: 800px;
+	height: auto;
+	overflow: hidden;
+	animation-name: fillone;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(.19,.72,.82,.82);
+	animation-fill-mode: forwards;
+	position: relative;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+}
+.last{
+	margin-top: -90px;
+/*	background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);*/
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 180px;
+	font-weight: 900;
+	-webkit-text-stroke:0.5px #000;
+	color:  transparent;
+	margin-left: 50px;
+	letter-spacing: 4px;
+	position: relative;
+	width: 0px;
+	overflow: hidden;
+	animation-name: fillone;
+	animation-duration: 1.8s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+	padding-right: 2px;
+	display: flex;
+	align-items: center;
+}	
+
+.fill{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 61%;
+	background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
+	left:-100%;
+	animation-name: filltwo;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	margin-left: 0px;
+}
+
+.fill2{
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	background: linear-gradient(90deg, #4776E6 0%, #8E54E9 100%);
+	left:-100%;
+	animation-name: filltwo;
+	animation-duration: 3s;
+	animation-delay: 1.5s;
+	animation-fill-mode: forwards;
+	margin-top: 7px;
+	z-index: 11;
+}
+
+@keyframes fillone{
+	0% {width: 0px;}
+	100% {width: 750px;}
+}
+
+@keyframes filltwo{
+	0% {left: -100%;}
+	50% {left: 0;}
+	100% {left: 100%;}
+}
+
+@keyframes fillthree{
+	0% {left: -100%;}
+	50% {left: 0;}
+	100% {left: 100%;}
+}
