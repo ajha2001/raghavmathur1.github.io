@@ -1,6 +1,7 @@
 body{
 	margin: 0;
 	overflow-x:hidden; 
+	font-family: segoe ui;
 }
 
 .container{
@@ -9,6 +10,7 @@ body{
 
 .section1{
 	display: flex;
+	height: 100vh;
 }
 
 .background{
@@ -33,10 +35,7 @@ body{
 	right: 0;
 	/*border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;*/
-	box-shadow: -10px 5px 20px 0 rgba(0,0,0,0.4);
-}
-
-.white{
+	box-shadow: -10px 5px 20px 0 rgba(0,0,0,0.05);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -75,4 +74,122 @@ body{
 	color: #0FBFE2;
 	font-weight: 600;
 	/*border-bottom: 1px solid #ED6A5E;*/
+}
+
+.section2{
+	padding: 6vh 0; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.b2{
+	font-size: 35px;
+}
+.s2{
+	font-size: 17px;
+	font-weight: 300;
+	margin-bottom: 50px;
+}
+
+.boxes{
+	width: 80vw;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: -50px;
+}
+
+.box{
+	width: 350px;
+	height: 440px;
+	padding-bottom: 100px;
+	box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.2);
+	border-radius: 5px;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.img{
+	width: 100%;
+	height: 210px;
+	background: url("background.jpg");
+	background-size: cover;
+	background-position: center; 
+	box-shadow: 0px 5px 20px 0 rgba(0,0,0,0.08);
+	position: absolute;
+	top: 0;
+}
+
+.btext{
+	margin-top: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.h{
+	font-weight: 900;
+	margin: 20px 0 0px 20px;
+	font-size: 25px;
+	text-align: center;
+
+}
+
+.sh{
+	margin: 10px 20px;
+	font-size: 14px;
+	text-align: justify;
+}
+
+.learn{
+	width: 150px;
+	text-align: center;
+	font-size: 18px;
+	color: #0FBFE2;
+	padding: 10px 5px;
+	font-weight: 600;
+	border-radius: 100px;
+}
+
+@media screen and (max-width: 700px) {
+	.background{
+		display: none;
+	}
+
+	.white{
+		left: 0;
+		width: 100vw;
+	}
+
+	.small{
+		text-align: center;
+	}
+
+	.align{
+		text-align: left;
+		padding-left: 0px;
+		padding-right: 0;
+	}
+
+	.big{
+		font-size: 60px;
+		text-align: center;
+	}
+
+	.smalltext{
+		margin-left: 30px;
+		margin-right: 40px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.big{
+		font-size: 50px;
+	}
 }
