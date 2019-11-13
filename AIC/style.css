@@ -5,11 +5,21 @@ body{
 	overflow-x: hidden;
 }
 
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
 .background{
 	position: absolute;
 	width: 100vw;
 	height: 100vh;
 	background: url(back.png);
+	background: url(back5.png);
+	background: url(back2.png);
+	background: url(back3.png);
+	background: url(back4.png);
+	background: url(back6.png);
 	background-size: 100% 70%;
 	background-position: bottom center;
 	background-repeat: no-repeat;
@@ -26,11 +36,17 @@ body{
 }
 
 .stock{
-	width: 130%;
-	height: 100%;
 	position: absolute;
-	top: 0px;
-	z-index: -2;
+	height: 100%;
+	left: -20px;
+}
+
+.vidcon{
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	z-index:-2; 
 }
 
 .section1{
@@ -48,7 +64,7 @@ body{
 }
 
 .hlogo{
-	width: 80px;
+	width: 120px;
 }
 
 .toplogo{
@@ -61,6 +77,7 @@ body{
 	height: 100%;
 	display: flex;
 	align-items: center;
+
 }
 
 .nav{
@@ -68,6 +85,20 @@ body{
 	display: flex;
 	justify-content: space-between;
 	cursor: pointer;
+	font-weight: 500;
+}
+
+.sidebar{
+	position: fixed;
+	margin: 20px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+	font-weight: 500;
+	right: 0;
+	z-index: 10000;
+	top: 35vh;
 }
 
 .topbar{
@@ -77,13 +108,14 @@ body{
 	height: 100px;
 	display: flex;
 	align-items: center;
-	background: rgba(255, 255, 255, 0.8);
+	background: rgba(255, 255, 255, 1);
 	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.02);
 	z-index: 10000;
+	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.2);
 }
 
 .cir{
-	border: 1px solid #000;
+	/*border: 1px solid #000;*/
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -91,10 +123,13 @@ body{
 	height: 20px;
 	padding: 5px;
 	border-radius: 100%;
-	margin: 0 7px;
+	margin: 7px 7px;
 	cursor: pointer;
 	transform: scale(1);
+	background: #fff;
 	transition: transform 0.5s ease;
+	box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.2);
+
 }
 
 .cir:hover{
@@ -113,7 +148,7 @@ body{
 }
 
 .mainhead{
-	font-size: 50px;
+	font-size: 70px;
 	font-weight: 600;
 	letter-spacing: 2px;
 	position: relative;
@@ -122,7 +157,7 @@ body{
 }
 
 .mainsubhead{
-	font-size: 20px;
+	font-size: 35px;
 	font-weight: 400;
 	letter-spacing: 2px;
 	margin-top: -10px;
@@ -133,7 +168,7 @@ body{
 }
 
 .maintext{
-	margin-top: -60px;
+	margin-top: -20px;
 	margin-left: 00px;
 	display: flex;
 	flex-direction: column;
@@ -157,6 +192,7 @@ body{
 	margin: 0 95px;
 	margin-right: 150px;
 	margin-top: 10px;
+	text-align: justify;
 }
 
 .section3{
@@ -164,6 +200,10 @@ body{
 	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(223,91,91,1) 0%, rgba(255,209,110,1) 100.2% );
 	background-image: linear-gradient( 103.3deg,  rgba(253,109,104,1) 7.7%, rgba(248,150,105,1) 90.8% );*/
 	background-image: linear-gradient(-120deg, #f6d365 0%, #FC8337 100%);
+	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+	background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+	background-image: linear-gradient(-120deg, #84fab0 0%, #2651dc 100%);
 	/*background: #DCF8C6;*/
 	width: 100vw;
 	position: relative;
@@ -222,20 +262,28 @@ body{
 }
 
 .button{
-	padding: 12px 20px;
+	padding: 10px 20px;
 	background-color: #fff;
-	width: 100px;	
+	width: 80px;	
 	text-align: center;
 	margin: 0 10px;
 	border-radius: 5px;	
 	font-size: 17px;
 	margin-top: 20px;
 	/*color: rgba(77,97,252,1);*/
-	color: rgba(223,91,91,1) ;
+	/*color: rgba(223,91,91,1) ;*/
+	color: #000;
 	font-weight: 600;
 	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.1);
 	transition: box-shadow 0.5s ease;
 	cursor: pointer;
+}
+
+.button1{
+	margin-left: 90px;
+	position: absolute;
+	right:90px; 
+	top:75px;
 }
 
 .button:hover{
@@ -246,12 +294,24 @@ body{
 .button2{
 	background: #EF7C3E;
 	background-image: linear-gradient(-120deg, #f6d365 -40%, #FC6237 100%);
+	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
 	color: #fff;
 }
 
 .button3{
 	border: 2px solid #F98645;
 	color: #F98645;
+	border: 2px solid #c9f880;
+	color: #c9f880;
+	border: 2px solid #84fab0;
+	color: #84fab0;
+	border: 2px solid #f78ca0;
+	color: #f78ca0;
+	border: 2px solid #fda085;
+	color: #fda085;
 	background: transparent;
 }
 
@@ -268,19 +328,23 @@ body{
 }
 
 .box{
-	width: 250px;
-	height: 250px;
+	width: 265px;
+	height: 265px;
 	background: #fff;
 	border-radius: 10px;
-	margin: 25px 35px;
+	margin: 25px 25px;
 	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.1);
 	padding: 15px;
 	transition: transform 0.5s ease;
-	transform: scale(1);
+	transform: scale(0.93);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: 	center;
 }
 
 .box:hover{
-	transform: scale(1.1);
+	transform: scale(1);
 }
 
 .number{
@@ -292,17 +356,18 @@ body{
 .bhead{
 	font-family: cera pro;
 	font-weight: 900;
-	font-size: 22px;
+	font-size: 24px;
 	margin-left: 10px;
-	margin-top: 20px;
+	margin-top: 0px;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .pointer{
-	font-size: 13px;
+	font-size: 15px;
 	margin-left: 10px; 
 	margin-top: 14px;
-	text-align: justify;
+	text-align: center;
 }
 
 .section4{
@@ -357,7 +422,7 @@ body{
 .in{
 	width: 600px;
 	height: 600px;
-	margin-bottom: 20px;
+	margin-bottom: 100px;
 }
 .black{
 	width: 100%;
@@ -392,10 +457,12 @@ body{
 
 .bar{
 	padding:30px 60px; 
-	width: 85vw;
+	width: 75vw;
 	height: 300px;
 	/*background-image: linear-gradient( 103.3deg,  rgba(253,109,104,1) 7.7%, rgba(248,150,105,1) 90.8% );	*/
 	background-image: linear-gradient(-120deg, #f6d365 0%, #FC6C44 100%);
+	background-image: linear-gradient(-120deg, #84fab0 0%, #2651dc 100%);
+
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
@@ -404,6 +471,10 @@ body{
 	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.1);
 	margin-bottom: 200px;
 	border-radius: 5px;
+}
+
+.barl{
+	justify-content: center;
 }
 
 .center{
@@ -415,8 +486,8 @@ body{
 }
 
 .ment{
-	width: 380px;
-	height: 500px;
+	width:440px;
+	height: 520px;
 	background: #fff;
 	margin: 10px 10px;
 	margin-top: -120px;	
@@ -428,7 +499,6 @@ body{
 }
 
 .circ{
-	background: url(person.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -436,6 +506,35 @@ body{
 	width: 130px;
 	border-radius: 100%;
 	margin-top: 25px;
+	overflow: hidden;
+	background: #333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cus{
+	margin-left: -35px;
+}
+
+.hei{
+	height: 100%;
+}
+
+.wid{
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+}
+
+.wid2{
+	width: 140%;
+	margin-left: 50px;
+	margin-top: 70px;
+}
+
+.al{
+	margin-top: 65px;
 }
 
 .name{
@@ -459,6 +558,10 @@ body{
 	word-spacing: -1px;
 }
 
+.sm{
+	font-size: 12px;
+}
+
 .section6{
 	margin-top: -60px;
 	padding-bottom: 3vw;
@@ -474,14 +577,17 @@ body{
 }
 
 .b2{
+	background: #fff;
 	width: 250px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 20px;
-	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.08);
+	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.2);
 	border-radius: 10px;	
 }
+
+
 
 .bs{
 	width: 90vw;
@@ -523,4 +629,14 @@ body{
 	display: flex;
 	justify-content: center;
 	font-size: 15px;
+}
+
+.section9{
+	background-image: linear-gradient(-120deg, #84fab0 0%, #2651dc 100%);
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.bback{
+	
 }

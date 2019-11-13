@@ -4,6 +4,8 @@
 	<title></title>
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -22,7 +24,7 @@
 		<div class="mainhead">
 			Hey, I'm&nbsp;
 			<div class="color">
-			Sayam Kanwar.<span class="highlight"></span>
+				Sayam Kanwar.<span class="highlight"></span>
 			</div>
 		</div>
 		<div class="subhead">
@@ -148,8 +150,54 @@
 							Read Story >
 						</div>
 					</div>
-				</div>		
+				</div>
+					<div class="block">
+					<div class="img"></div>
+					<div class="cont">
+						<div class="whead">Daakster</div>
+						<div class="wsubhead">An AI based email summarizer</div>
+						<div class="wtext">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. <br><br>
+
+							Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+						<div class="read">
+							Read Story >
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="img"></div>
+					<div class="cont">
+						<div class="whead">Daakster</div>
+						<div class="wsubhead">An AI based email summarizer</div>
+						<div class="wtext">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. <br><br>
+
+							Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+						<div class="read">
+							Read Story >
+						</div>
+					</div>
+				</div>			
 			</div>
+		</div>
+
+		<div class="circles">
+			<div class="circle c1 active"></div>
+			<div class="circle c2"></div>
+			<div class="circle c3"></div>
 		</div>
 	</div>
 
@@ -201,5 +249,26 @@
 			</div>
 		</div>
 	</div>
+
+
+	<script type="text/javascript">
+		$(".c1").click(function () {
+			$(".mover").css({"left":"0"})
+			$(".circle").removeClass("active")
+			$(this).addClass("active")
+		})
+
+		$(".c2").click(function () {
+			$(".mover").css({"left":"-100%"})
+			$(".circle").removeClass("active")
+			$(this).addClass("active")
+		})
+
+		$(".c3").click(function () {
+			$(".mover").css({"left":"-200%"})
+			$(".circle").removeClass("active")
+			$(this).addClass("active")
+		})
+	</script>
 </body>
 </html>
