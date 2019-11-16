@@ -17,7 +17,7 @@
 	width: 500px;
 	height: 370px;
 	background: #000;
-	background: url(backevent.jpg);
+	background: url(ipr.jpg);
 	background-position: center;
 	background-size: cover;
 	border-radius: 7px;
@@ -47,7 +47,7 @@
 
 .chan{
 	font-weight: 800;
-	font-size: 24px;
+	font-size: 23px;
 	text-transform: uppercase;
 	font-family: cera pro;
 	margin: 20px;
@@ -60,4 +60,8 @@
 	font-family: cera pro;
 	margin:-20px 20px;
 
+}
+
+.lt{
+	font-size: 19.5px;
 }
